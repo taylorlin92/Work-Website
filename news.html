@@ -9,15 +9,22 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/tooplate-barista.css" rel="stylesheet">
     <style>
-        /* 确保内容在导航栏下面 */
+        /* 確保內容在導航欄下面 */
         body {
-            padding-top: 80px; /* 这个值应该与导航栏的高度相匹配 */
+            padding-top: 80px; /* 這個值應該與導航欄的高度相匹配 */
+            margin: 0; /* 移除任何默認的 margin */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 確保頁面高度至少為視窗高度 */
+        }
+        main {
+            flex: 1; /* 讓 main 元素擴展以佔據剩餘空間 */
         }
         .navbar-nav .nav-item {
-            margin-right: 20px; /* 调整导航项之间的间距 */
+            margin-right: 20px; /* 調整導航項之間的間距 */
         }
         .navbar-nav .nav-item:last-child {
-            margin-right: 0; /* 移除最后一个导航项的右边距 */
+            margin-right: 0; /* 移除最後一個導航項的右邊距 */
         }
         .hero-section {
             text-align: center;
@@ -28,7 +35,7 @@
             width: 100%;
             height: auto;
         }
-        /* 添加对footer的样式调整 */
+        /* 添加對 footer 的樣式調整 */
         .site-footer {
             background: #6ABDE1;
             color: #fff;
@@ -106,72 +113,56 @@
             </div>
         </section>
     </main>
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-    
-                    <div class="col-lg-4 col-12 me-auto">
-                        <em class="text-white d-block mb-4">Where to find us?</em>
-    
-                        <strong class="text-white">
-                            <i class="bi-geo-alt me-2"></i>
-                            2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
-                        </strong>
-    
-                        <ul class="social-icon mt-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-facebook">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-                        <em class="text-white d-block mb-4">Contact</em>
-    
-                        <p class="d-flex mb-1">
-                            <strong class="me-2">Phone:</strong>
-                            <a href="tel: (12345678)" class="site-footer-link">
-                                (02) 
-                                12 345 678
-                            </a>
-                        </p>
-    
-                        <p class="d-flex">
-                            <strong class="me-2">Email:</strong>
-    
-                            <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">
-                                Taylor@gmail.com
-                            </a>
-                        </p>
-                    </div>
-    
-    
-                    <div class="row">
-                        <div class="col-lg-8 col-12 mt-4">
-                            <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
-                        </div>
-      
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 me-auto">
+                    <em class="text-white d-block mb-4">Where to find us?</em>
+                    <strong class="text-white">
+                        <i class="bi-geo-alt me-2"></i>
+                        2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
+                    </strong>
+                    <ul class="social-icon mt-4">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                    <em class="text-white d-block mb-4">Contact</em>
+                    <p class="d-flex mb-1">
+                        <strong class="me-2">Phone:</strong>
+                        <a href="tel: (12345678)" class="site-footer-link">(02) 12 345 678</a>
+                    </p>
+                    <p class="d-flex">
+                        <strong class="me-2">Email:</strong>
+                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">Taylor@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-8 col-12 mt-4">
+                    <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/vegas.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script>
-        // JavaScript 用于动态更新年份
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // JavaScript 用於動態更新年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // JavaScript 用于在点击 "Product" 时跳转到 product.html
-            document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
+        // JavaScript 用於在點擊 "Product" 時跳轉到 product.html
+        document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
             if (!e.target.closest('.dropdown-menu')) {
                 window.location.href = 'product.html';
             }
         });
-        </script>
+    </script>
 </body>
 </html>

@@ -26,6 +26,7 @@
             background-color: #f8f9fa;
             padding-top: 20px;
             margin-top: 120px; /* 使菜单位置比顶部导航栏低 */
+            margin-left: -15px; /* 去掉左边距 */
         }
         .side-nav .nav-link {
             font-size: 1rem;
@@ -111,6 +112,21 @@
                 align-items: center;
             }
         }
+        @media (max-width: 470px) {
+            .site-footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+            .site-footer .col-lg-4,
+            .site-footer .col-lg-3,
+            .site-footer .col-lg-8 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .site-footer .col-lg-8 {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -148,16 +164,16 @@
         <!-- 左側導航菜單 -->
         <nav class="nav flex-column side-nav" style="width: 250px;">
             <a class="nav-link active" aria-current="page" data-bs-toggle="collapse" href="#collapseWatersports" role="button" aria-expanded="true" aria-controls="collapseWatersports">Watersports</a>
-            <div class="collapse show" id="collapseWatersports">
+            <!-- <div class="collapse show" id="collapseWatersports">
                 <nav class="nav flex-column ms-3">
                     <a class="nav-link" href="#skimboards">Skimboards</a>
                     <a class="nav-link" href="#waterskifins">Waterski Fins</a>
                     <a class="nav-link" href="#wakeboardfins">Wakeboard Fins</a>
                     <a class="nav-link" href="#waterskihandles">Waterski Handles</a>
                 </nav>
-            </div>
+            </div> -->
             <a class="nav-link" data-bs-toggle="collapse" href="#collapseSnowsports" role="button" aria-expanded="false" aria-controls="collapseSnowsports">Snowsports</a>
-            <div class="collapse show" id="collapseSnowsports">
+           <!-- <div class="collapse show" id="collapseSnowsports">
                 <nav class="nav flex-column ms-3">
                     <a class="nav-link" href="#stomppads">Traction Stomp Pads</a>
                     <a class="nav-link" href="#leasheslocks">Leashes & Locks</a>
@@ -165,9 +181,9 @@
                     <a class="nav-link" href="#cargonetstraps">Cargo Nets & Straps</a>
                     <a class="nav-link" href="#tuningaccessories">Tuning Accessories</a>
                 </nav>
-            </div>
+            </div> -->
             <a class="nav-link" data-bs-toggle="collapse" href="#collapseLeisure" role="button" aria-expanded="false" aria-controls="collapseLeisure">Leisure</a>
-            <div class="collapse show" id="collapseLeisure">
+            <!-- <div class="collapse show" id="collapseLeisure">
                 <nav class="nav flex-column ms-3">
                     <a class="nav-link" href="#trickboards">Trickboards</a>
                     <a class="nav-link" href="#longboards">Longboards</a>
@@ -177,11 +193,11 @@
                     <a class="nav-link" href="#bearings">Bearings</a>
                     <a class="nav-link" href="#bushings">Bushings</a>
                 </nav>
-            </div>
+            </div> -->
         </nav>
         
         <!-- 主內容區域 -->
-        <div class="flex-grow-1 p-3">
+        <div class="flex-grow-1 p-3" style="margin-left: -15px;">
             <section class="section-padding" id="section_product">
                 <div class="container">
                     <h1 class="product-category"><u>Product Category</u></h1>
@@ -189,29 +205,29 @@
                 <div class="container">
                     <h1>Watersports</h1>
                     <section id="skimboards">
-                        <h2>Skimboards</h2>
+                        <h2>寶可夢</h2>
                         <div class="row">
                             <div class="col-md-4">
                                 <a href="Photo_Page/skimboard1.html">
-                                    <img src="images/Product_Photos/Skimboards/Skimboard.png" alt="Skimboard 1" class="product-image">
-                                    <p>Skimboard 1 Description</p>
+                                    <img src="Testing_Photos/Pikachu_1.webp" alt="Skimboard 1" class="product-image">
+                                    <p>皮卡丘</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/skimboard2.html">
-                                    <img src="images/Product_Photos/Skimboards/Skimboard_1.png" alt="Skimboard 2" class="product-image">
-                                    <p>Skimboard 2 Description</p>
+                                    <img src="Testing_Photos/TurtleSurf_1.avif" alt="Skimboard 2" class="product-image">
+                                    <p>傑尼龜</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/skimboard3.html">
-                                    <img src="images/Product_Photos/Skimboards/Skimboard_2.png" alt="Skimboard 3" class="product-image">
-                                    <p>Skimboard 3 Description</p>
+                                    <img src="Testing_Photos/Psyduck.jpeg" alt="Skimboard 3" class="product-image">
+                                    <p>可達鴨</p>
                                 </a>
                             </div>
                         </div>
                     </section>
-                    <section id="waterskifins">
+                    <!--  <section id="waterskifins">
                         <h2>Waterski Fins</h2>
                         <div class="row">
                             <div class="col-md-4">
@@ -281,34 +297,34 @@
                         </div>
                     </section>
                 </div>
-            </section>
+            </section> -->
             <section class="section-padding" id="snowsports">
                 <div class="container">
-                    <h1>Snowsports</h1>
+                    <h1>SEA</h1>
                     <section id="stomppads">
-                        <h2>Traction Stomp Pads</h2>
+                        <h2>海賊王</h2>
                         <div class="row">
                             <div class="col-md-4">
                                 <a href="Photo_Page/stomppad1.html">
-                                    <img src="images/Product_Photos/Stomp_Pads/stomppad1.jpg" alt="Stomp Pad 1" class="product-image">
-                                    <p>Stomp Pad 1 Description</p>
+                                    <img src="Testing_Photos/onepiece_1.jpeg" alt="Stomp Pad 1" class="product-image">
+                                    <p>喬巴</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/stomppad2.html">
-                                    <img src="images/Product_Photos/Stomp_Pads/stomppad2.jpg" alt="Stomp Pad 2" class="product-image">
-                                    <p>Stomp Pad 2 Description</p>
+                                    <img src="Testing_Photos/onepiece_2.jpeg" alt="Stomp Pad 2" class="product-image">
+                                    <p>魯夫</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/stomppad3.html">
-                                    <img src="images/Product_Photos/Stomp_Pads/stomppad3.jpg" alt="Stomp Pad 3" class="product-image">
-                                    <p>Stomp Pad 3 Description</p>
+                                    <img src="Testing_Photos/onepiece_3.jpeg" alt="Stomp Pad 3" class="product-image">
+                                    <p>娜美</p>
                                 </a>
                             </div>
                         </div>
                     </section>
-                    <section id="leasheslocks">
+                   <!-- <section id="leasheslocks">
                         <h2>Leashes & Locks</h2>
                         <div class="row">
                             <div class="col-md-4">
@@ -401,7 +417,7 @@
                         </div>
                     </section>
                 </div>
-            </section>
+            </section> -->
             <section class="section-padding" id="leisure">
                 <div class="container">
                     <h1>Leisure</h1>
@@ -410,25 +426,25 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a href="Photo_Page/trickboard1.html">
-                                    <img src="images/Product_Photos/Trickboards/trickboard1.jpg" alt="Trickboard 1" class="product-image">
+                                    <img src="Testing_Photos/Skateboard_1.jpeg" alt="Trickboard 1" class="product-image">
                                     <p>Trickboard 1 Description</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/trickboard2.html">
-                                    <img src="images/Product_Photos/Trickboards/trickboard2.jpg" alt="Trickboard 2" class="product-image">
+                                    <img src="Testing_Photos/Longboard.jpeg" alt="Trickboard 2" class="product-image">
                                     <p>Trickboard 2 Description</p>
                                 </a>
                             </div>
                             <div class="col-md-4">
                                 <a href="Photo_Page/trickboard3.html">
-                                    <img src="images/Product_Photos/Trickboards/trickboard3.jpg" alt="Trickboard 3" class="product-image">
+                                    <img src="Testing_Photos/Pennyboard.webp" alt="Trickboard 3" class="product-image">
                                     <p>Trickboard 3 Description</p>
                                 </a>
                             </div>
                         </div>
                     </section>
-                    <section id="longboards">
+                   <!--  <section id="longboards">
                         <h2>Longboards</h2>
                         <div class="row">
                             <div class="col-md-4">
@@ -567,7 +583,7 @@
                         </div>
                     </section>
                 </div>
-            </section>
+            </section> -->
         </div>
     </main>
     <footer class="site-footer">
