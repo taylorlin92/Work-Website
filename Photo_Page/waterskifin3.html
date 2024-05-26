@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Waterski Fin 1 - Taylor Co., Ltd.">
+    <meta name="author" content="Taylor Co., Ltd.">
+    <title>Waterski Fin 1 - Taylor Co., Ltd.</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/tooplate-barista.css" rel="stylesheet">
+    <style>
+        /* 自定義左側導航菜單樣式 */
+        .side-nav {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+            margin-top: 120px; /* 使菜单位置比顶部导航栏低 */
+        }
+        .side-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            padding: 10px 20px;
+        }
+        .side-nav .nav-link:hover {
+            background-color: #e9ecef;
+            color: #007bff;
+        }
+        .side-nav .nav-link.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .side-nav .collapse .nav-link {
+            padding-left: 40px;
+        }
+        .product-details {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-info {
+            margin-left: 20px;
+        }
+        .main-content {
+            margin-top: 50px; /* 增加顶部外边距 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-lg">                
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../images/skateboard-cartoon-illustration-png.webp" class="navbar-brand-image img-fluid" alt="LOGO">
+                    TAYLOR
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../product.html#watersports">Watersports</a></li>
+                                <li><a class="dropdown-item" href="../product.html#snowsports">Snowsports</a></li>
+                                <li><a class="dropdown-item" href="../product.html#leisure">Leisure</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex">
+        <!-- 左侧导航菜单 -->
+        <nav class="nav flex-column side-nav" style="width: 250px;">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse" href="#collapseWatersports" role="button" aria-expanded="true" aria-controls="collapseWatersports">Watersports</a>
+            <div class="collapse show" id="collapseWatersports">
+                <nav class="nav flex-column ms-3">
+                    <a class="nav-link" href="../product.html#skimboards">Skimboards</a>
+                    <a class="nav-link" href="../product.html#waterskifins">Waterski Fins</a>
+                    <a class="nav-link" href="../product.html#wakeboardfins">Wakeboard Fins</a>
+                    <a class="nav-link" href="../product.html#waterskihandles">Waterski Handles</a>
+                </nav>
+            </div>
+            <a class="nav-link" data-bs-toggle="collapse" href="#collapseSnowsports" role="button" aria-expanded="false" aria-controls="collapseSnowsports">Snowsports</a>
+            <div class="collapse show" id="collapseSnowsports">
+                <nav class="nav flex-column ms-3">
+                    <a class="nav-link" href="../product.html#stomppads">Traction Stomp Pads</a>
+                    <a class="nav-link" href="../product.html#leasheslocks">Leashes & Locks</a>
+                    <a class="nav-link" href="../product.html#hardwaretools">Hardware Tools</a>
+                    <a class="nav-link" href="../product.html#cargonetstraps">Cargo Nets & Straps</a>
+                    <a class="nav-link" href="../product.html#tuningaccessories">Tuning Accessories</a>
+                </nav>
+            </div>
+            <a class="nav-link" data-bs-toggle="collapse" href="#collapseLeisure" role="button" aria-expanded="false" aria-controls="collapseLeisure">Leisure</a>
+            <div class="collapse show" id="collapseLeisure">
+                <nav class="nav flex-column ms-3">
+                    <a class="nav-link" href="../product.html#trickboards">Trickboards</a>
+                    <a class="nav-link" href="../product.html#longboards">Longboards</a>
+                    <a class="nav-link" href="../product.html#pennyboards">Penny Boards</a>
+                    <a class="nav-link" href="../product.html#trucks">Trucks</a>
+                    <a class="nav-link" href="../product.html#wheels">Wheels</a>
+                    <a class="nav-link" href="../product.html#bearings">Bearings</a>
+                    <a class="nav-link" href="../product.html#bushings">Bushings</a>
+                </nav>
+            </div>
+        </nav>
+        
+        <!-- 主内容区域 -->
+        <div class="flex-grow-1 p-3 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../images/Product_Photos/Waterski_Fins/2-3.jpg" alt="Waterski Fin 1" class="product-image">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Aluminum WaterSki Wings (Black Anodized)</h1>
+                        <br><br>
+                        <p>Material & Spec Information:</p>
+                        <ul>
+                            <li>Material: Aluminum</li>
+                            <li>Surface Finish: Brushed; Black Regular Anodized</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-12 me-auto">
+                    <em class="text-white d-block mb-4">Where to find us?</em>
+
+                    <strong class="text-white">
+                        <i class="bi-geo-alt me-2"></i>
+                        2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
+                    </strong>
+
+                    <ul class="social-icon mt-4">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                    <em class="text-white d-block mb-4">Contact</em>
+
+                    <p class="d-flex mb-1">
+                        <strong class="me-2">Phone:</strong>
+                        <a href="tel: (12345678)" class="site-footer-link">
+                            (02) 
+                            12 345 678
+                        </a>
+                    </p>
+
+                    <p class="d-flex">
+                        <strong class="me-2">Email:</strong>
+
+                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">
+                            Taylor@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-8 col-12 mt-4">
+                        <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                    </div>
+  
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    // JavaScript 用于动态更新年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // JavaScript 用于在点击 "Product" 时跳转到 product.html
+        document.querySelector('.nav-link.dropdown-toggle').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A' && e.target.href === window.location.href) {
+                e.preventDefault();
+                window.location.href = '../product.html';
+            }
+        });
+    </script>
+</body>
+</html>

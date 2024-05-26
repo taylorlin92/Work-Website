@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Taylor Co., Ltd.">
+    <meta name="author" content="Taylor Co., Ltd.">
+    <title>Contact Us - TAYLOR CO., LTD.</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tooplate-barista.css" rel="stylesheet">
+    <style>
+        /* 确保内容在导航栏下面 */
+        body {
+            padding-top: 80px; /* 这个值应该与导航栏的高度相匹配 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 導航欄 -->
+        <nav class="navbar navbar-expand-lg">                
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/skateboard-cartoon-illustration-png.webp" class="navbar-brand-image img-fluid" alt="LOGO">
+                    TAYLOR
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="product.html#watersports">Watersports</a></li>
+                                <li><a class="dropdown-item" href="product.html#snowsports">Snowsports</a></li>
+                                <li><a class="dropdown-item" href="product.html#leisure">Leisure</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-padding" id="section_contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>這裡放置您的聯絡信息和表單。</p>
+                <!-- 聯絡表單 -->
+                <form action="#" method="post" class="custom-form contact-form" role="form">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" rows="4" class="form-control" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 mx-auto mt-3">
+                        <button type="submit" class="form-control">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-12 me-auto">
+                    <em class="text-white d-block mb-4">Where to find us?</em>
+
+                    <strong class="text-white">
+                        <i class="bi-geo-alt me-2"></i>
+                        2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
+                    </strong>
+
+                    <ul class="social-icon mt-4">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                    <em class="text-white d-block mb-4">Contact</em>
+
+                    <p class="d-flex mb-1">
+                        <strong class="me-2">Phone:</strong>
+                        <a href="tel: (12345678)" class="site-footer-link">
+                            (02) 
+                            12 345 678
+                        </a>
+                    </p>
+
+                    <p class="d-flex">
+                        <strong class="me-2">Email:</strong>
+
+                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">
+                            Taylor@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-8 col-12 mt-4">
+                        <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                    </div>
+  
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    // JavaScript 用于动态更新年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // JavaScript 用于在点击 "Product" 时跳转到 product.html
+        document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown-menu')) {
+                window.location.href = 'product.html';
+            }
+        });
+    </script>
+</body>
+</html>

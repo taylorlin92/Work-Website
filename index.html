@@ -52,23 +52,28 @@ Bootstrap 5 HTML CSS Template
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-lg-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
         
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_2">About</a>
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="../product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../product.html#watersports">Watersports</a></li>
+                                        <li><a class="dropdown-item" href="../product.html#snowsports">Snowsports</a></li>
+                                        <li><a class="dropdown-item" href="../product.html#leisure">Leisure</a></li>
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_3">Product</a>
+                                    <a class="nav-link" href="news.html">News</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_4">News</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>
 
@@ -514,14 +519,17 @@ Bootstrap 5 HTML CSS Template
                             </div>
 
 
-                            <div class="col-lg-8 col-12 mt-4">
-                                <p class="copyright-text mb-0">Copyright © Barista Cafe 2048 
-                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
-                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-12 mt-4">
+                                    <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                                </div>
+              
                     </div>
                 </footer>
             </main>
 
+
+            
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -529,6 +537,16 @@ Bootstrap 5 HTML CSS Template
         <script src="js/click-scroll.js"></script>
         <script src="js/vegas.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+        // JavaScript 用于动态更新年份
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+        // JavaScript 用于在点击 "Product" 时跳转到 product.html
+            document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown-menu')) {
+                window.location.href = 'product.html';
+            }
+        });
+        </script>
     </body>
 </html>
