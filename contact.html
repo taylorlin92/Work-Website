@@ -13,6 +13,57 @@
         body {
             padding-top: 80px; /* 这个值应该与导航栏的高度相匹配 */
         }
+        .navbar-nav .nav-item {
+            margin-right: 20px; /* 调整导航项之间的间距 */
+        }
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0; /* 移除最后一个导航项的右边距 */
+        }
+        .hero-section {
+            text-align: center;
+            color: #fff;
+            background-size: cover;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        /* 添加对footer的样式调整 */
+        .site-footer {
+            background: #6ABDE1;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .site-footer a {
+            color: #fff;
+        }
+        .site-footer a:hover {
+            color: #ddd;
+        }
+        .site-footer .social-icon {
+            list-style: none;
+            padding: 0;
+        }
+        .site-footer .social-icon li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .site-footer .social-icon li a {
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .site-footer .col-lg-4,
+            .site-footer .col-lg-3,
+            .site-footer .col-lg-8 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .site-footer .row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -28,7 +79,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item dropdown">
