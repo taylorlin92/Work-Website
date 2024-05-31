@@ -3,18 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Waterski Fin 1 - Taylor Co., Ltd.">
+    <meta name="description" content="Waterski Fin 2 - Taylor Co., Ltd.">
     <meta name="author" content="Taylor Co., Ltd.">
-    <title>Waterski Fin 1 - Taylor Co., Ltd.</title>
+    <title>Waterski Fin 2 - Taylor Co., Ltd.</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/tooplate-barista.css" rel="stylesheet">
     <style>
+        /* 确保内容在导航栏下面 */
+        body {
+            padding-top: 100px; /* 这个值应该与导航栏的高度相匹配 */
+        }
+        .product-category {
+            margin-top: 20px;
+            margin-bottom: -50px; /* 减少底部外边距 */
+        }
+        h2 {
+            margin-top: 10px; /* 减少顶部外边距 */
+        }
         /* 自定義左側導航菜單樣式 */
         .side-nav {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #f8f9fa;
             padding-top: 20px;
-            margin-top: 120px; /* 使菜单位置比顶部导航栏低 */
+            margin-top: 90px; /* 使菜单位置比顶部导航栏低 */
+            margin-left: -15px; /* 去掉左边距 */
         }
         .side-nav .nav-link {
             font-size: 1rem;
@@ -39,8 +51,9 @@
             padding: 20px;
         }
         .product-image {
-            max-width: 100%;
-            height: auto;
+            width: 300px; /* 设置图片的宽度 */
+            height: 250px; /* 设置图片的高度 */
+            object-fit: cover; /* 确保图片保持比例，裁剪以适应容器 */
         }
         .product-info {
             margin-left: 20px;
@@ -48,10 +61,20 @@
         .main-content {
             margin-top: 50px; /* 增加顶部外边距 */
         }
+        .navbar-nav .nav-item {
+            margin-right: 20px; /* 调整导航项之间的间距 */
+        }
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0; /* 移除最后一个导航项的右边距 */
+        }
         .hero-section {
             text-align: center;
             color: #fff;
             background-size: cover;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
         }
         /* 添加对footer的样式调整 */
         .site-footer {
@@ -89,12 +112,27 @@
                 align-items: center;
             }
         }
+        @media (max-width: 470px) {
+            .site-footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+            .site-footer .col-lg-4,
+            .site-footer .col-lg-3,
+            .site-footer .col-lg-8 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .site-footer .col-lg-8 {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- 导航栏 -->
-        <nav class="navbar navbar-expand-lg">                
+        <!-- 導航欄 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">                
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="../index.html">
                     <img src="../images/skateboard-cartoon-illustration-png.webp" class="navbar-brand-image img-fluid" alt="LOGO">
@@ -104,7 +142,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
                         <li class="nav-item dropdown">
@@ -123,59 +161,54 @@
         </nav>
     </header>
     <main class="d-flex">
-        <!-- 左侧导航菜单 -->
+        <!-- 左側導航菜單 -->
         <nav class="nav flex-column side-nav" style="width: 250px;">
-            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse" href="#collapseWatersports" role="button" aria-expanded="true" aria-controls="collapseWatersports">Watersports</a>
-            <div class="collapse show" id="collapseWatersports">
-                <nav class="nav flex-column ms-3">
-                    <a class="nav-link" href="../product.html#skimboards">Skimboards</a>
-                    <a class="nav-link" href="../product.html#waterskifins">Waterski Fins</a>
-                    <a class="nav-link" href="../product.html#wakeboardfins">Wakeboard Fins</a>
-                    <a class="nav-link" href="../product.html#waterskihandles">Waterski Handles</a>
-                </nav>
-            </div>
-            <a class="nav-link" data-bs-toggle="collapse" href="#collapseSnowsports" role="button" aria-expanded="false" aria-controls="collapseSnowsports">Snowsports</a>
-            <div class="collapse show" id="collapseSnowsports">
-                <nav class="nav flex-column ms-3">
-                    <a class="nav-link" href="../product.html#stomppads">Traction Stomp Pads</a>
-                    <a class="nav-link" href="../product.html#leasheslocks">Leashes & Locks</a>
-                    <a class="nav-link" href="../product.html#hardwaretools">Hardware Tools</a>
-                    <a class="nav-link" href="../product.html#cargonetstraps">Cargo Nets & Straps</a>
-                    <a class="nav-link" href="../product.html#tuningaccessories">Tuning Accessories</a>
-                </nav>
-            </div>
-            <a class="nav-link" data-bs-toggle="collapse" href="#collapseLeisure" role="button" aria-expanded="false" aria-controls="collapseLeisure">Leisure</a>
-            <div class="collapse show" id="collapseLeisure">
-                <nav class="nav flex-column ms-3">
-                    <a class="nav-link" href="../product.html#trickboards">Trickboards</a>
-                    <a class="nav-link" href="../product.html#longboards">Longboards</a>
-                    <a class="nav-link" href="../product.html#pennyboards">Penny Boards</a>
-                    <a class="nav-link" href="../product.html#trucks">Trucks</a>
-                    <a class="nav-link" href="../product.html#wheels">Wheels</a>
-                    <a class="nav-link" href="../product.html#bearings">Bearings</a>
-                    <a class="nav-link" href="../product.html#bushings">Bushings</a>
-                </nav>
-            </div>
+            <a class="nav-link" aria-current="page" href="../product.html#watersports" role="button">Watersports</a>
+            <nav class="nav flex-column ms-3">
+                <a class="nav-link" href="../product.html#skimboards">Skimboards</a>
+                <a class="nav-link" href="../product.html#waterskifins">Waterski Fins</a>
+                <a class="nav-link" href="../product.html#wakeboardfins">Wakeboard Fins</a>
+                <!-- <a class="nav-link" href="../product.html#waterskihandles">Waterski Handles</a> -->
+            </nav>
+            <a class="nav-link" href="../product.html#snowsports" role="button">Snowsports</a>
+            <nav class="nav flex-column ms-3">
+                <a class="nav-link" href="../product.html#stomppads">Traction Stomp Pads</a>
+                <a class="nav-link" href="../product.html#leasheslocks">Leashes & Locks</a>
+                <a class="nav-link" href="../product.html#hardwaretools">Hardware Tools</a>
+                <a class="nav-link" href="../product.html#cargonetstraps">Cargo Nets & Straps</a>
+                <a class="nav-link" href="../product.html#tuningaccessories">Tuning Accessories</a>
+            </nav>
+            <a class="nav-link" href="../product.html#leisure" role="button">Leisure</a>
+            <nav class="nav flex-column ms-3">
+                <a class="nav-link" href="../product.html#trickboards">Trickboards</a>
+                <a class="nav-link" href="../product.html#longboards">Longboards</a>
+                <a class="nav-link" href="../product.html#pennyboards">Penny Boards</a>
+                <a class="nav-link" href="../product.html#trucks">Trucks</a>
+                <a class="nav-link" href="../product.html#wheels">Wheels</a>
+                <a class="nav-link" href="../product.html#bearings">Bearings</a>
+                <a class="nav-link" href="../product.html#bushings">Bushings</a>
+            </nav>
         </nav>
         
-        <!-- 主内容区域 -->
-        <div class="flex-grow-1 p-3 mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../images/Product_Photos/Waterski_Fins/Waterski Fin_Type 3.1.jpg" alt="Waterski Fin 1" class="product-image">
-                    </div>
-                    <div class="col-md-6">
-                        <h1>Aluminum WaterSki Fin Sets (Regular Anodized)</h1>
-                        <br><br>
-                        <p>Material & Spec Information:</p>
-                        <ul>
-                            <li>Material: Aluminum</li>
-                            <li>Surface Finish: Brushed; Clear Regular Anodized</li>
-                        </ul>
+        <!-- 主內容區域 -->
+        <div class="flex-grow-1 p-3">
+            <section class="section-padding" id="section_waterskifin2">
+                <div class="container">
+                    <h1>Aluminum Waterski Fin Set (Clear Anodized)</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="../images/Product_Photos/Waterski_Fins/Waterskifin_2.jpg" alt="Waterski_Fins" class="product-image">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Material & Spec Information:</p>
+                            <ul>
+                                <li>Material: Aluminum</li>
+                                <li>Surface Finish: Polished; Clear Anodized</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
     <footer class="site-footer">
@@ -218,30 +251,27 @@
                     </p>
                 </div>
 
-
-                <div class="row">
-                    <div class="col-lg-8 col-12 mt-4">
-                        <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
-                    </div>
-  
+                <div class="col-lg-8 col-12 mt-4">
+                    <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/vegas.min.js"></script>
-    <script src="js/custom.js"></script>
+    <!-- JAVASCRIPT 文件 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/click-scroll.js"></script>
+    <script src="../js/vegas.min.js"></script>
+    <script src="../js/custom.js"></script>
     <script>
     // JavaScript 用于动态更新年份
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
     // JavaScript 用于在点击 "Product" 时跳转到 product.html
-        document.querySelector('.nav-link.dropdown-toggle').addEventListener('click', function(e) {
-            if (e.target.tagName === 'A' && e.target.href === window.location.href) {
-                e.preventDefault();
+        document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown-menu')) {
                 window.location.href = '../product.html';
             }
         });
