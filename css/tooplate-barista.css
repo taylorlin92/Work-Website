@@ -415,6 +415,8 @@ strong {
   left: 10px;
 }
 
+
+
 .navbar .dropdown-item {
   display: inline-block;
   color: var(--p-color);
@@ -449,11 +451,26 @@ strong {
   border: 0;
 }
 
+
 @media screen and (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu {
     opacity: 1;
     margin-top: 0;
     pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .dropdown-menu {
+    a{color: white;}
+    background: none;
+    opacity: 1; /* 確保可見 */
+    pointer-events: auto; /* 確保可點擊 */
+    margin-top: 0;
+  }
+
+  .navbar .dropdown-menu::before {
+    display: none;
   }
 }
 
