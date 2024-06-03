@@ -1,5 +1,4 @@
 //jquery-click-scroll
-//by syamsul'isul' Arifin
 
 var sectionArray = [1, 2, 3, 4, 5];
 
@@ -35,3 +34,29 @@ $(document).ready(function(){
     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });
+
+// 讓#collapse pointer到對的位置，且不被上方menu擋到
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (this.hash !== "") {
+            e.preventDefault();
+            const hash = this.hash;
+            const targetElement = document.querySelector(hash);
+            const targetPosition = targetElement.offsetTop - navbarHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // Update active class
+           document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+           this.classList.add('active');
+        }
+    });
+});
+});
+

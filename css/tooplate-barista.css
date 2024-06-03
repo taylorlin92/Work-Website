@@ -47,6 +47,7 @@ https://www.tooplate.com/view/2137-barista-cafe
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
+  scroll-padding-top: 70px; /* 根據導航欄的高度調整 */
 }
 
 
