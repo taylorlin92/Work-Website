@@ -38,3 +38,6 @@
     }, 300);
   }
 })(window.jQuery);
+
+// Initiate the wowjs
+new WOW().init();
