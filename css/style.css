@@ -471,17 +471,43 @@ strong {
 
 @media screen and (max-width: 992px) {
   .navbar .dropdown-menu {
-    a{color: white;}
+    display: none;
+  }
+
+  .navbar .dropdown-menu::before {
+    display: none;
+  }
+
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; /* 當滑鼠懸停時顯示dropdown menu */
+  }
+
+  .navbar-nav .dropdown:hover .dropdown-menu a {
+    color: white;
+  }
+
+  .navbar-nav .dropdown:hover .dropdown-menu {
     background: none;
     opacity: 1; /* 確保可見 */
     pointer-events: auto; /* 確保可點擊 */
     margin-top: 0;
+  }
+}
+
+
+/*@media screen and (max-width: 992px) {
+  .navbar .dropdown-menu {
+    a{color: white;}
+    background: none;
+    opacity: 1; /* 確保可見 */
+   /* pointer-events: auto; /* 確保可點擊 */
+   /* margin-top: 0;
   } 
 
   .navbar .dropdown-menu::before {
     display: none;
   }
-}
+} */
 
 .navbar-toggler {
   border: 0;
