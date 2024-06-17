@@ -3,28 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About Taylor Co., Ltd.">
+    <meta name="description" content="Contact Taylor Co., Ltd.">
     <meta name="author" content="Taylor Co., Ltd.">
-    <title>About Us - TAYLOR CO., LTD.</title>
+    <title>Contact Us - TAYLOR CO., LTD.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-        /* 確保內容在導航欄下面 */
+        /* 确保内容在导航栏下面 */
         body {
-            padding-top: 80px; /* 這個值應該與導航欄的高度相匹配 */
-            margin: 0; /* 移除任何默認的 margin */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* 確保頁面高度至少為視窗高度 */
-        }
-        main {
-            flex: 1; /* 讓 main 元素擴展以佔據剩餘空間 */
+            padding-top: 80px; /* 这个值应该与导航栏的高度相匹配 */
         }
         .navbar-nav .nav-item {
-            margin-right: 20px; /* 調整導航項之間的間距 */
+            margin-right: 20px; /* 调整导航项之间的间距 */
         }
         .navbar-nav .nav-item:last-child {
-            margin-right: 0; /* 移除最後一個導航項的右邊距 */
+            margin-right: 0; /* 移除最后一个导航项的右边距 */
         }
         .hero-section {
             text-align: center;
@@ -35,7 +28,7 @@
             width: 100%;
             height: auto;
         }
-        /* 添加對 footer 的樣式調整 */
+        /* 添加对footer的样式调整 */
         .site-footer {
             background: #6ABDE1;
             color: #fff;
@@ -105,77 +98,127 @@
         </nav>
     </header>
     <main>
-        <section class="section-padding" id="section_about">
+        <section class="section-padding" id="section_contact">
             <div class="container">
-                <h1>About Us</h1>
-                <section class="about-section section-padding" id="section_2">
-                    <div class="section-overlay"></div>
+                <h1>Contact Us</h1>
+                
+                <section class="contact-section section-padding" id="section_5">
                     <div class="container">
-                        <div class="row align-items-center">
+                        <div class="row">   
 
-                            <div class="col-lg-6 col-12">
-                                <div class="ratio ratio-1x1">
-                                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                                        <source src="videos/How To Catch Waves Skimboarding w_ World Champion Austin Keen.mp4" type="video/mp4">
-
-                                        Your browser does not support the video tag.
-                                    </video>
-
-                                    <div class="about-video-info d-flex flex-column">
-                                        <h4 class="mt-auto">We Started Since 1993.</h4>
-
-                                        <h4>Expertised in the Industry.</h4>
-                                    </div>
-                                </div>
+                            <div class="col-lg-12 col-12"> <!--Contact-->
+                              <em class="text-white">Say Hello</em>
+                                <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
                             </div>
 
-                            <p class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                                <!--<em class="text-white">Watersports & Leisure Manufacturer</em>-->
+                            <div class="col-lg-6 col-12">
+                                <form action="#" method="post" class="custom-form contact-form" role="form">
 
-                                <h2 class="text-white mb-3">Taylor Co., Ltd.</h2>
+                                <div class="row">
+                                    
+                                    <div class="col-lg-6 col-12">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
 
-                                <p class="text-white">The company was stablished in 1993. With business operation extended to two professional fields, we then have two factories located in both Taiwan and Mainland China, where each facility manages individual professional field. <br><br> OEM and ODM are welcome. <br><br> The company has specialized in OEM and ODM projects for more than a decade. Our clients include the most prestigious names in the sporting goods business worldwide. We pride oursevles for the ability of our experienced technological team to meet advanced product specifications from our clients. <br><br> As a leading global manufacturer and innovator of premium sporting goods. Headquarter in Taipei, Taiwan, with ISO 9001 certified factories located in Southern Taiwan and Guandong, China. Our mission is to provide the best products with superior quality and technological advances to all of our clients. As an enthusiastic and driven company, we are committed to providing superior equipments with most affordable prices to our clients. </p>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Taylor" required="">
+                                    </div>
 
-                                <!--- <p class="text-white">Barista Cafe is free Bootstrap 5 HTML layout provided by <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tooplate</a>.</p> --->
+                                    <div class="col-lg-6 col-12">
+                                        <label for="email" class="form-label">Email Address</label>
 
-                                <a href="#factory" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Our Facilities </a>
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Taylor@gmail.com" required="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Product Inquires?</label>
+
+                                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 col-12 mx-auto mt-3">
+                                    <button type="submit" class="form-control">Send Message</button>
+                                </div>
+                            </form>
+                            </div>
+
+                            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+                                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115558.5673630066!2d121.44476159999998!3d25.162547200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9727e338539%3A0x52247d05ff667ae5!2sSTARBUCKS%20Breeze%20Taipei%20Station%20Shop!5e0!3m2!1sen!2stw!4v1716533301423!5m2!1sen!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                            </div>
+
                         </div>
                     </div>
                 </section>
-                <!-- 添加更多內容 -->
+
+                <!-- 聯絡表單 -->
+                <form action="#" method="post" class="custom-form contact-form" role="form">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" rows="4" class="form-control" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 mx-auto mt-3">
+                        <button type="submit" class="form-control">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-4 col-12 me-auto">
                     <em class="text-white d-block mb-4">Where to find us?</em>
+
                     <strong class="text-white">
                         <i class="bi-geo-alt me-2"></i>
                         2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
                     </strong>
+
                     <ul class="social-icon mt-4">
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-facebook"></a>
+                            <a href="#" class="social-icon-link bi-facebook">
+                            </a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
                     <em class="text-white d-block mb-4">Contact</em>
+
                     <p class="d-flex mb-1">
                         <strong class="me-2">Phone:</strong>
-                        <a href="tel: (12345678)" class="site-footer-link">(02) 12 345 678</a>
+                        <a href="tel: (12345678)" class="site-footer-link">
+                            (02) 
+                            12 345 678
+                        </a>
                     </p>
+
                     <p class="d-flex">
                         <strong class="me-2">Email:</strong>
-                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">Taylor@gmail.com</a>
+
+                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">
+                            Taylor@gmail.com
+                        </a>
                     </p>
                 </div>
-                <div class="col-lg-8 col-12 mt-4">
-                    <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
-                </div>
-            </div>
+
+
+                <div class="row">
+                    <div class="col-lg-8 col-12 mt-4">
+                        <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                    </div>
+  
         </div>
     </footer>
 
@@ -187,10 +230,10 @@
     <script src="js/vegas.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        // JavaScript 用於動態更新年份
+    // JavaScript 用于动态更新年份
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // JavaScript 用於在點擊 "Product" 時跳轉到 product.html
+    // JavaScript 用于在点击 "Product" 时跳转到 product.html
         document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
             if (!e.target.closest('.dropdown-menu')) {
                 window.location.href = 'product.html';

@@ -1,74 +1,39 @@
 <!doctype html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Contact Taylor Co., Ltd.">
-    <meta name="author" content="Taylor Co., Ltd.">
-    <title>Contact Us - TAYLOR CO., LTD.</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        /* 确保内容在导航栏下面 */
-        body {
-            padding-top: 80px; /* 这个值应该与导航栏的高度相匹配 */
-        }
-        .navbar-nav .nav-item {
-            margin-right: 20px; /* 调整导航项之间的间距 */
-        }
-        .navbar-nav .nav-item:last-child {
-            margin-right: 0; /* 移除最后一个导航项的右边距 */
-        }
-        .hero-section {
-            text-align: center;
-            color: #fff;
-            background-size: cover;
-        }
-        .product-image {
-            width: 100%;
-            height: auto;
-        }
-        /* 添加对footer的样式调整 */
-        .site-footer {
-            background: #6ABDE1;
-            color: #fff;
-            padding: 40px 0;
-        }
-        .site-footer a {
-            color: #fff;
-        }
-        .site-footer a:hover {
-            color: #ddd;
-        }
-        .site-footer .social-icon {
-            list-style: none;
-            padding: 0;
-        }
-        .site-footer .social-icon li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .site-footer .social-icon li a {
-            font-size: 24px;
-        }
-        @media (max-width: 768px) {
-            .site-footer .col-lg-4,
-            .site-footer .col-lg-3,
-            .site-footer .col-lg-8 {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            .site-footer .row {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <!-- 導航欄 -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>TAYLOR CO., LTD.</title>
+        
+        <!-- Favicon 網址旁邊的圖案 -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts 網站用的字體 -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+        
+        <!-- Libraries Stylesheet 特效功能-->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">   
+        <link href="lib/vegas/vegas.min.css" rel="stylesheet"> 
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/bootstrap-icons.css" rel="stylesheet"> 
+        <!--Section 1的背景動畫--> 
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <!-- 導航欄 -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">                
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -96,12 +61,12 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
+
         <section class="section-padding" id="section_contact">
             <div class="container">
                 <h1>Contact Us</h1>
                 
+                <!-- 聯絡表單 -->
                 <section class="contact-section section-padding" id="section_5">
                     <div class="container">
                         <div class="row">   
@@ -139,106 +104,115 @@
                                 <div class="col-lg-5 col-12 mx-auto mt-3">
                                     <button type="submit" class="form-control">Send Message</button>
                                 </div>
-                            </form>
+                                </form>
                             </div>
 
                             <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
                                 <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115558.5673630066!2d121.44476159999998!3d25.162547200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9727e338539%3A0x52247d05ff667ae5!2sSTARBUCKS%20Breeze%20Taipei%20Station%20Shop!5e0!3m2!1sen!2stw!4v1716533301423!5m2!1sen!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
                             </div>
-
                         </div>
                     </div>
                 </section>
-
-                <!-- 聯絡表單 -->
-                <form action="#" method="post" class="custom-form contact-form" role="form">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea name="message" rows="4" class="form-control" id="message" placeholder="Your Message" required></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12 mx-auto mt-3">
-                        <button type="submit" class="form-control">Send Message</button>
-                    </div>
-                </form>
             </div>
         </section>
     </main>
+        
+    <!--Site Footer Start-->
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-4 col-12 me-auto">
-                    <em class="text-white d-block mb-4">Where to find us?</em>
-
-                    <strong class="text-white">
-                        <i class="bi-geo-alt me-2"></i>
-                        2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100
-                    </strong>
-
-                    <ul class="social-icon mt-4">
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-facebook">
+        <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-12 me-auto">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2"><i class="fbi bi-geo-alt-fill me-3"></i>2F., No. 3, Beiping W Rd, Zhongzheng District, Taipei City 100</p>
+                        <p class="mb-2"><i class="bi bi-telephone-fill me-3"></i>
+                            <a href="tel: (+886212345678)" class="site-footer-link">
+                            +(886)2 1234 5678</a>
+                        </p>
+                        <p class="mb-2"><i class="bi bi-envelope me-3"></i>
+                            <a href="mailto:taylor@yokotex.com" class="site-footer-link">
+                                TAYLOR@GMAIL.COM
                             </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-                    <em class="text-white d-block mb-4">Contact</em>
-
-                    <p class="d-flex mb-1">
-                        <strong class="me-2">Phone:</strong>
-                        <a href="tel: (12345678)" class="site-footer-link">
-                            (02) 
-                            12 345 678
-                        </a>
-                    </p>
-
-                    <p class="d-flex">
-                        <strong class="me-2">Email:</strong>
-
-                        <a href="mailto:Taylor@yourgmail.com" class="site-footer-link">
-                            Taylor@gmail.com
-                        </a>
-                    </p>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-8 col-12 mt-4">
-                        <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                        </p>
+                        <div class="d-flex pt-2">   
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook">
+                                    </a>
+                                </li>
+                            </ul>  
+                        </div> 
                     </div>
-  
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-light mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Product</a>
+                        <a class="btn btn-link" href="">News</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <p class="copyright-text mb-0">© <span id="currentYear"></span> Taylor Co., Ltd. &nbsp; All Rights Reserved </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/vegas.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-    // JavaScript 用于动态更新年份
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+     <!-- JAVASCRIPT FILES -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/click-scroll.js"></script>
+     <script src="js/vegas.min.js"></script>
+     <script src="js/custom.js"></script>
 
-    // JavaScript 用于在点击 "Product" 时跳转到 product.html
-        document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
-            if (!e.target.closest('.dropdown-menu')) {
-                window.location.href = 'product.html';
-            }
-        });
-    </script>
-</body>
+
+     <!-- JavaScript Libraries -->
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/counterup/counterup.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     <script src="lib/isotope/isotope.pkgd.min.js"></script>
+     <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+     <script>
+     // JavaScript 用于动态更新年份
+         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+     // JavaScript 用于在点击 "Product" 时跳转到 product.html
+         document.querySelector('#navbarDropdown').addEventListener('click', function(e) {
+         if (!e.target.closest('.dropdown-menu')) {
+             window.location.href = 'product.html';
+         }
+     });
+
+     // JavaScript 用于在窗口大小变化时收起Product的下拉菜单
+     function checkWindowSize() {
+         if (window.innerWidth < 992) { // 当屏幕宽度小于992px时
+             var dropdownMenu = document.querySelector('.dropdown-menu.show');
+             if (dropdownMenu) {
+                 var dropdownToggle = document.querySelector('.dropdown-toggle');
+                 if (dropdownToggle) {
+                     dropdownToggle.click(); // 模拟点击以收起菜单
+                 }
+             }
+         }
+     }
+
+     // 监听窗口大小变化
+     window.addEventListener('resize', checkWindowSize);
+
+     // 初始检查
+     checkWindowSize();
+
+     </script>
+ </body>
 </html>

@@ -50,7 +50,7 @@ body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
   padding-top: 50px; /* 这个值应该与导航栏的高度相匹配 */
-  scroll-padding-top: 50px; /* 根據導航欄的高度調整 */
+  scroll-padding-top: 70px; /* 根據導航欄的高度調整 */
 }
 
 
@@ -458,14 +458,14 @@ strong {
   position: relative;
   left: 2px;
   border: 0;
-}
+} 
 
 
 @media screen and (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu {
     opacity: 1;
     margin-top: 0;
-    pointer-events: auto;
+    pointer-events: auto; 
   }
 }
 
@@ -476,7 +476,7 @@ strong {
     opacity: 1; /* 確保可見 */
     pointer-events: auto; /* 確保可點擊 */
     margin-top: 0;
-  }
+  } 
 
   .navbar .dropdown-menu::before {
     display: none;
@@ -516,7 +516,7 @@ strong {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transform: rotate(-45deg);
-}
+} 
 
 .navbar-toggler .navbar-toggler-icon {
   background: var(--white-color);
@@ -952,7 +952,6 @@ strong {
 
 .google-map {
   border-radius: var(--border-radius-medium);
-  filter: grayscale(100);
 }
 
 .contact-block-wrap {
@@ -1104,7 +1103,7 @@ strong {
 
 
 
-.footer .btn.btn-social {
+.site-footer .btn.btn-social {
   margin-right: 5px;
   width: 35px;
   height: 35px;
@@ -1116,11 +1115,15 @@ strong {
   transition: .3s;
 }
 
-.footer .btn.btn-social:hover {
+.site-footer .btn.btn-social:hover {
   color: var(--primary);
 }
 
-.footer .btn.btn-link {
+
+/*---------------------------------------
+  SITE FOOTER BUTTON              
+-----------------------------------------*/
+.site-footer .btn.btn-link {
   display: block;
   margin-bottom: 5px;
   padding: 0;
@@ -1129,24 +1132,23 @@ strong {
   font-size: 15px;
   font-weight: normal;
   text-transform: capitalize;
+  text-decoration-line: none;
   transition: .3s;
 }
 
-.footer .btn.btn-link::before {
+.site-footer .btn.btn-link::before {
   position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
+  content: "\F231";
+  font-family: "bootstrap-icons";
   font-weight: 900;
   margin-right: 10px;
 }
 
-.footer .btn.btn-link:hover {
+.site-footer .btn.btn-link:hover {
   color: var(--primary);
   letter-spacing: 1px;
   box-shadow: none;
 }
-
-
 
 /*---------------------------------------
   SOCIAL ICON               
